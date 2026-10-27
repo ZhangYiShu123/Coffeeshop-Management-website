@@ -3,7 +3,7 @@ export const initialMenu = [
   {
     id: 'm1',
     name: 'Caramel Macchiato',
-    category: 'Coffee',
+    category: '咖啡',
     price: 5.45,
     description: 'Freshly steamed milk with vanilla-flavored syrup, marked with espresso and topped with caramel drizzle.',
     image: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80',
@@ -15,7 +15,7 @@ export const initialMenu = [
   {
     id: 'm2',
     name: 'Artisan Espresso Double',
-    category: 'Coffee',
+    category: '咖啡',
     price: 3.90,
     description: 'Rich, full-bodied concentrated shot of dark roasted Ethiopian coffee beans with thick golden crema.',
     image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&q=80',
@@ -27,7 +27,7 @@ export const initialMenu = [
   {
     id: 'm3',
     name: 'Velvet Flat White',
-    category: 'Coffee',
+    category: '咖啡',
     price: 4.99,
     description: 'Smooth micro-foamed whole milk poured over double shot ristretto with silky latte art.',
     image: 'https://images.unsplash.com/photo-1577968897966-3d4325b36b61?auto=format&fit=crop&w=600&q=80',
@@ -39,7 +39,7 @@ export const initialMenu = [
   {
     id: 'm4',
     name: 'Matcha Green Tea Latte',
-    category: 'Tea',
+    category: '茶',
     price: 5.29,
     description: 'Ceremonial grade Japanese Uji matcha whisked to perfection with oat milk and subtle agave sweetness.',
     image: 'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&q=80',
@@ -51,7 +51,7 @@ export const initialMenu = [
   {
     id: 'm5',
     name: 'Earl Grey Reserve',
-    category: 'Tea',
+    category: '茶',
     price: 4.29,
     description: 'Organic Ceylon black tea infused with natural Italian bergamot orange and blue cornflowers.',
     image: 'https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=600&q=80',
@@ -63,7 +63,7 @@ export const initialMenu = [
   {
     id: 'm6',
     name: 'Iced Cold Brew Vanilla Foam',
-    category: 'Cold Drinks',
+    category: '冷饮',
     price: 5.79,
     description: 'Slow 24-hour steep cold brew served over ice and crowned with velvety sweet cream cold foam.',
     image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=80',
@@ -74,10 +74,10 @@ export const initialMenu = [
   },
   {
     id: 'm7',
-    name: 'Belgian Chocolate Croissant',
-    category: 'Snacks',
+    name: '比利时巧克力可颂',
+    category: '零食',
     price: 4.49,
-    description: 'Flaky, buttery multi-layered puff pastry filled with dark Belgian chocolate chunks.',
+    description: '酥脆、黄油般的多层千层酥，内馅是融化的比利时黑巧克力块.',
     image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80',
     rating: 4.8,
     availability: true,
@@ -86,10 +86,10 @@ export const initialMenu = [
   },
   {
     id: 'm8',
-    name: 'Avocado Sourdough Toast',
-    category: 'Snacks',
+    name: '牛油果酸面包吐司',
+    category: '零食',
     price: 8.99,
-    description: 'Smashed organic avocado, chili flakes, microgreens, and poached egg on toasted sourdough.',
+    description: '压碎的有机牛油果、辣椒片、微型蔬菜，以及水煮荷包蛋，配以手工烤制的酸面包.',
     image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80',
     rating: 4.7,
     availability: true,
@@ -99,7 +99,7 @@ export const initialMenu = [
   {
     id: 'm9',
     name: 'Tiramisu Classico',
-    category: 'Desserts',
+    category: '甜点',
     price: 6.99,
     description: 'Traditional Italian espresso-soaked ladyfingers with whipped mascarpone and cocoa powder.',
     image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=600&q=80',
@@ -111,7 +111,7 @@ export const initialMenu = [
   {
     id: 'm10',
     name: 'New York Cheesecake',
-    category: 'Desserts',
+    category: '甜点',
     price: 6.49,
     description: 'Rich and creamy dense cheesecake with graham cracker crust and wild blueberry reduction.',
     image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=600&q=80',

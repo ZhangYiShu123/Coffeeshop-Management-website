@@ -48,7 +48,7 @@ export const StaffDashboard = () => {
   const [isAddingProduct, setIsAddingProduct] = useState(false);
   const [newProduct, setNewProduct] = useState({
     name: "",
-    category: "Coffee",
+    category: "咖啡",
     price: "",
     description: "",
     image:
@@ -83,7 +83,7 @@ export const StaffDashboard = () => {
       addToast(`Added "${created.name}" to menu!`, "success");
       setNewProduct({
         name: "",
-        category: "Coffee",
+        category: "咖啡",
         price: "",
         description: "",
         image:
@@ -531,11 +531,11 @@ export const StaffDashboard = () => {
                       className="w-full bg-white border border-coffee-300 rounded-xl px-3 py-2 text-xs font-bold text-coffee-950"
                     >
                       {[
-                        "Coffee",
-                        "Tea",
-                        "Cold Drinks",
-                        "Snacks",
-                        "Desserts",
+                        "咖啡",
+                        "茶",
+                        "冷饮",
+                        "零食",
+                        "甜点",
                       ].map((c) => (
                         <option key={c} value={c}>
                           {c}

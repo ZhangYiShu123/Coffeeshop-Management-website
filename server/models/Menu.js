@@ -5,7 +5,7 @@ const menuSchema = new mongoose.Schema({
   description: { type: String, required: true },
   category: { 
     type: String, 
-    enum: ['Coffee', 'Tea', 'Cold Drinks', 'Snacks', 'Desserts'], 
+    enum: ['咖啡', '茶', '冷饮', '零食', '甜点'], 
     required: true 
   },
   price: { type: Number, required: true },

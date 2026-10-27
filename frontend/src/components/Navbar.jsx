@@ -24,10 +24,10 @@ export const Navbar = () => {
   const [roleDropdownOpen, setRoleDropdownOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", path: "/home" },
-    { name: "Menu", path: "/menu" },
-    { name: "Reservations", path: "/reservations" },
-    { name: "About Us", path: "/home#about" },
+    { name: "主页", path: "/home" },
+    { name: "菜单", path: "/menu" },
+    { name: "预定", path: "/reservations" },
+    { name: "关于我们", path: "/home#about" },
   ];
 
   return (
@@ -92,7 +92,7 @@ export const Navbar = () => {
           <Link
             to="/cart"
             className="relative p-2.5 rounded-xl bg-coffee-900/80 hover:bg-coffee-800 text-coffee-100 border border-coffee-700/50 transition-all hover:scale-105 group"
-            title="View Cart"
+            title="查看购物车"
           >
             <ShoppingBag className="w-5 h-5 text-gold group-hover:scale-110 transition-transform" />
             {itemCount > 0 && (
@@ -145,14 +145,14 @@ export const Navbar = () => {
                       onClick={() => setRoleDropdownOpen(false)}
                       className="flex items-center gap-2.5 px-3 py-2 text-sm rounded-lg hover:bg-coffee-800 text-coffee-200 hover:text-gold transition-colors"
                     >
-                      <User className="w-4 h-4" /> My Profile & Orders
+                      <User className="w-4 h-4" /> 我的个人资料&订单
                     </Link>
                     <Link
                       to="/reservations"
                       onClick={() => setRoleDropdownOpen(false)}
                       className="flex items-center gap-2.5 px-3 py-2 text-sm rounded-lg hover:bg-coffee-800 text-coffee-200 hover:text-gold transition-colors"
                     >
-                      <Calendar className="w-4 h-4" /> My Reservations
+                      <Calendar className="w-4 h-4" /> 我的预订
                     </Link>
                     {(user.role === "staff" || user.role === "owner") && (
                       <Link
@@ -160,8 +160,7 @@ export const Navbar = () => {
                         onClick={() => setRoleDropdownOpen(false)}
                         className="flex items-center gap-2.5 px-3 py-2 text-sm rounded-lg hover:bg-coffee-800 text-amber-300 font-medium transition-colors"
                       >
-                        <ShieldAlert className="w-4 h-4 text-amber-400" /> Staff
-                        Dashboard
+                        <ShieldAlert className="w-4 h-4 text-amber-400" /> 员工工作台
                       </Link>
                     )}
                     {user.role === "owner" && (
@@ -170,8 +169,7 @@ export const Navbar = () => {
                         onClick={() => setRoleDropdownOpen(false)}
                         className="flex items-center gap-2.5 px-3 py-2 text-sm rounded-lg hover:bg-coffee-800 text-emerald-300 font-medium transition-colors"
                       >
-                        <BarChart3 className="w-4 h-4 text-emerald-400" /> Owner
-                        Analytics
+                        <BarChart3 className="w-4 h-4 text-emerald-400" /> 所有者分析
                       </Link>
                     )}
                   </div>
@@ -183,7 +181,7 @@ export const Navbar = () => {
                       }}
                       className="w-full flex items-center gap-2.5 px-3 py-2 text-sm rounded-lg hover:bg-rose-950/50 text-rose-400 transition-colors text-left"
                     >
-                      <LogOut className="w-4 h-4" /> Sign Out
+                      <LogOut className="w-4 h-4" /> 退出
                     </button>
                   </div>
                 </div>
@@ -195,13 +193,13 @@ export const Navbar = () => {
                 to="/login"
                 className="px-4 py-2 rounded-xl text-sm font-semibold text-coffee-100 hover:text-gold transition-colors"
               >
-                Sign In
+                登录
               </Link>
               <Link
                 to="/signup"
                 className="px-4 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-gold to-coffee-400 text-coffee-950 hover:brightness-110 transition-all shadow-md"
               >
-                Sign Up
+                注册
               </Link>
             </div>
           )}

@@ -26,7 +26,7 @@ export const ProductCard = ({ product }) => {
           {/* Popular Tag */}
           {product.isPopular && (
             <span className="absolute top-3 left-3 bg-amber-500 text-coffee-950 font-extrabold text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-full flex items-center gap-1 shadow-md">
-              <Sparkles className="w-3 h-3 fill-coffee-950" /> Bestseller
+              <Sparkles className="w-3 h-3 fill-coffee-950" /> 畅销
             </span>
           )}
 
@@ -86,7 +86,7 @@ export const ProductCard = ({ product }) => {
           className="flex-1 flex items-center justify-center gap-2 bg-coffee-900 hover:bg-coffee-800 text-cream px-4 py-2.5 rounded-xl font-semibold text-xs transition-all shadow-md active:scale-95 group-hover:bg-gold group-hover:text-coffee-950"
         >
           <ShoppingBag className="w-4 h-4" />
-          Add to Cart
+          添加到购物车
         </button>
       </div>
     </div>

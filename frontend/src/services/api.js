@@ -279,11 +279,11 @@ export const analyticsService = {
           { month: "Sep", revenue: 48920 },
         ],
         categoryRevenue: [
-          { category: "Coffee", value: 42, color: "#6F4227" },
-          { category: "Cold Drinks", value: 24, color: "#D4A373" },
-          { category: "Snacks", value: 18, color: "#B07D4F" },
-          { category: "Desserts", value: 10, color: "#8B5A2B" },
-          { category: "Tea", value: 6, color: "#543322" },
+          { category: "咖啡", value: 42, color: "#6F4227" },
+          { category: "冷饮", value: 24, color: "#D4A373" },
+          { category: "零食", value: 18, color: "#B07D4F" },
+          { category: "甜点", value: 10, color: "#8B5A2B" },
+          { category: "茶", value: 6, color: "#543322" },
         ],
         topSellingProducts: [
           { name: "Caramel Macchiato", sold: 482, revenue: 2646.18 },

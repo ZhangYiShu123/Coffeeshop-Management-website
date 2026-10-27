@@ -69,20 +69,18 @@ export const Home = () => {
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 py-20">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-coffee-900/90 border border-gold/40 text-gold text-xs font-semibold tracking-wider uppercase backdrop-blur-md shadow-lg animate-float">
             <Sparkles className="w-4 h-4 text-gold fill-gold" />
-            <span>Handcrafted Specialty Roastery</span>
+            <span>手工精品烘焙坊</span>
           </div>
 
           <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-extrabold text-cream leading-tight tracking-tight">
-            Your Perfect Coffee, <br />
+            您最好的咖啡, <br />
             <span className="bg-gradient-to-r from-gold via-coffee-300 to-amber-200 bg-clip-text text-transparent italic">
-              Brewed Just for You.
+              专门为您磨制.
             </span>
           </h1>
 
           <p className="max-w-2xl mx-auto text-base sm:text-lg text-coffee-200 font-normal leading-relaxed">
-            Experience the rich aromas of ethically sourced single-origin beans,
-            roasted to perfection and crafted by master baristas in a warm,
-            luxurious atmosphere.
+            在温馨奢华的氛围中，品尝由大师级咖啡师精心烘焙和制作的、源自道德采购的单品咖啡豆所散发的浓郁香气.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
@@ -91,14 +89,14 @@ export const Home = () => {
               className="flex items-center gap-2 bg-gradient-to-r from-gold to-coffee-400 text-coffee-950 px-8 py-4 rounded-2xl font-bold text-base shadow-gold-glow hover:scale-105 transition-all duration-300 group"
             >
               <Coffee className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-              Create Account
+              创建账户
             </Link>
             <Link
               to="/login"
               className="flex items-center gap-2 bg-coffee-900/90 hover:bg-coffee-800 text-cream px-8 py-4 rounded-2xl font-bold text-base border border-coffee-700 hover:border-gold/50 transition-all duration-300"
             >
               <Calendar className="w-5 h-5 text-gold" />
-              Sign In
+              登录
             </Link>
           </div>
 
@@ -108,25 +106,25 @@ export const Home = () => {
               <p className="font-serif text-3xl font-extrabold text-gold">
                 100%
               </p>
-              <p className="text-xs text-coffee-300">Organic Arabica Beans</p>
+              <p className="text-xs text-coffee-300">有机阿拉比卡咖啡豆</p>
             </div>
             <div>
               <p className="font-serif text-3xl font-extrabold text-gold">
                 15+
               </p>
-              <p className="text-xs text-coffee-300">Signature Brew Styles</p>
+              <p className="text-xs text-coffee-300">豆子研磨风格</p>
             </div>
             <div>
               <p className="font-serif text-3xl font-extrabold text-gold">
                 4.9 ★
               </p>
-              <p className="text-xs text-coffee-300">Over 12,000+ Reviews</p>
+              <p className="text-xs text-coffee-300">超 12,000+ 好评</p>
             </div>
             <div>
               <p className="font-serif text-3xl font-extrabold text-gold">
                 20 Mins
               </p>
-              <p className="text-xs text-coffee-300">Fast Table Service</p>
+              <p className="text-xs text-coffee-300">快速餐桌服务</p>
             </div>
           </div>
         </div>
@@ -137,17 +135,17 @@ export const Home = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-coffee-200 pb-4">
           <div>
             <span className="text-xs font-bold text-coffee-600 uppercase tracking-widest">
-              Customer Favorites
+              客户最爱
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-coffee-950 mt-1">
-              Best-Selling Coffee & Treats
+              最畅销的咖啡与甜点
             </h2>
           </div>
           <Link
             to="/menu"
             className="inline-flex items-center gap-1.5 text-sm font-bold text-coffee-800 hover:text-coffee-600 transition"
           >
-            View Entire Menu <ArrowRight className="w-4 h-4" />
+            完整菜单 <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
 
@@ -177,10 +175,10 @@ export const Home = () => {
                 <Award className="w-8 h-8 text-gold shrink-0" />
                 <div>
                   <p className="font-serif text-lg font-bold text-cream">
-                    Award Winner
+                    获奖
                   </p>
                   <p className="text-xs text-coffee-300">
-                    Best Specialty Roaster 2025
+                    获得2025年最佳专业烘焙师奖
                   </p>
                 </div>
               </div>
@@ -189,16 +187,13 @@ export const Home = () => {
 
           <div className="space-y-6">
             <span className="text-xs font-bold text-gold uppercase tracking-widest">
-              Our Heritage & Craft
+              我们的传承与工艺
             </span>
             <h2 className="font-serif text-3xl sm:text-5xl font-extrabold text-cream leading-tight">
-              Crafted With Passion, Brewed to Perfection.
+              满怀激情，精心酿造，尽善尽美.
             </h2>
             <p className="text-coffee-200 text-sm sm:text-base leading-relaxed">
-              At Brew & Bean, coffee is more than just a morning beverage—it is
-              a sacred ritual. Founded in 2018, we partner directly with
-              sustainable micro-farms across Ethiopia, Colombia, and Guatemala
-              to source the finest 100% Arabica beans.
+              在巴黎 & 纽约，咖啡不仅仅是早晨的饮料——它是一种神圣的仪式。我们成立于2018年，与埃塞俄比亚、哥伦比亚和危地马拉的可持续微型农场直接合作，采购最好的100%阿拉比卡咖啡豆。
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -206,10 +201,10 @@ export const Home = () => {
                 <ShieldCheck className="w-6 h-6 text-gold shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-serif font-bold text-cream text-sm">
-                    Direct Trade Beans
+                    购买最佳的豆子
                   </h4>
                   <p className="text-xs text-coffee-300">
-                    Ethically sourced directly from high-altitude farms.
+                    直接从高海拔农场合乎道德地采购.
                   </p>
                 </div>
               </div>
@@ -217,10 +212,10 @@ export const Home = () => {
                 <Heart className="w-6 h-6 text-gold shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-serif font-bold text-cream text-sm">
-                    Master Baristas
+                    优秀的咖啡师
                   </h4>
                   <p className="text-xs text-coffee-300">
-                    Precision temperature, pressure, and silky latte art.
+                    精确的温度，压力和丝绸拉花艺术.
                   </p>
                 </div>
               </div>
@@ -233,14 +228,13 @@ export const Home = () => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="text-center space-y-2 max-w-2xl mx-auto">
           <span className="text-xs font-bold text-coffee-600 uppercase tracking-widest">
-            Testimonials
+            奖状
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-coffee-950">
-            Loved By Coffee Lovers
+            咖啡爱好者的最爱
           </h2>
           <p className="text-sm text-coffee-600">
-            Here is what our community says about their daily coffee ritual at
-            Brew & Bean.
+            以下是我们的社区对他们在Brew & Bean的日常咖啡仪式的看法.
           </p>
         </div>
 
@@ -283,14 +277,13 @@ export const Home = () => {
         <div className="bg-gradient-to-r from-coffee-950 via-coffee-900 to-coffee-950 rounded-3xl p-8 sm:p-12 text-coffee-100 border border-coffee-800 shadow-2xl grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
           <div className="space-y-3 lg:col-span-2">
             <span className="bg-gold/20 text-gold px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-              Visit Us Today
+              今日到访
             </span>
             <h3 className="font-serif text-3xl font-extrabold text-cream">
-              Ready for an Unforgettable Coffee Experience?
+              准备好享受难忘的咖啡体验了吗?
             </h3>
             <p className="text-coffee-300 text-sm max-w-xl">
-              Stop by our flagship roastery at 482 Artisan Way or book a
-              reserved table ahead for family, business, or relaxation.
+              到我们位于482 Artisan Way的旗舰烘焙工坊，或提前预订家庭、商务或休闲桌位.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row lg:flex-col gap-3">
@@ -298,13 +291,13 @@ export const Home = () => {
               to="/reservations"
               className="bg-gold text-coffee-950 font-bold px-6 py-3.5 rounded-xl text-center shadow-lg hover:brightness-110 transition"
             >
-              Book Table Now
+              现在订桌
             </Link>
             <Link
               to="/menu"
               className="bg-coffee-800 text-cream font-bold px-6 py-3.5 rounded-xl text-center border border-coffee-700 hover:bg-coffee-700 transition"
             >
-              Order Ahead
+            咖啡订单
             </Link>
           </div>
         </div>

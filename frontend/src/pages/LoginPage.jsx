@@ -48,17 +48,17 @@ export const LoginPage = () => {
             <Coffee className="w-7 h-7" />
           </div>
           <h2 className="font-serif text-3xl font-extrabold text-coffee-950">
-            Welcome Back
+            欢迎回来
           </h2>
           <p className="text-xs text-coffee-600">
-            Sign in to manage orders, reservations, or staff portals.
+           登录以管理订单、预订或员工门户。
           </p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-xs font-semibold text-coffee-700 mb-1">
-              Email Address
+              电子邮箱地址
             </label>
             <div className="relative">
               <Mail className="w-4 h-4 text-coffee-400 absolute left-3 top-1/2 -translate-y-1/2" />
@@ -76,13 +76,13 @@ export const LoginPage = () => {
           <div>
             <div className="flex justify-between items-center mb-1">
               <label className="block text-xs font-semibold text-coffee-700">
-                Password
+                密码
               </label>
               <Link
                 to="/forgot-password"
                 className="text-[11px] text-coffee-600 hover:text-gold font-semibold"
               >
-                Forgot password?
+                忘记密码?
               </Link>
             </div>
             <div className="relative">
@@ -103,17 +103,17 @@ export const LoginPage = () => {
             disabled={loading}
             className="w-full bg-gradient-to-r from-gold to-coffee-400 text-coffee-950 py-3.5 rounded-2xl font-bold text-sm shadow-gold-glow hover:brightness-110 transition"
           >
-            {loading ? "Authenticating..." : "Sign In"}
+            {loading ? "Authenticating..." : "登录"}
           </button>
         </form>
 
         <p className="text-center text-xs text-coffee-600">
-          Don't have an account yet?{" "}
+         还没有账号吗?{" "}
           <Link
             to="/signup"
             className="font-bold text-coffee-900 hover:text-gold"
           >
-            Create Account
+            创建账户
           </Link>
         </p>
       </div>

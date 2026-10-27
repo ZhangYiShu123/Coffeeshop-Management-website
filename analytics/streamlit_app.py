@@ -133,11 +133,11 @@ def load_analytics_data(url):
         ],
 
         "categoryRevenue": [
-            {"category": "Coffee", "value": 42},
-            {"category": "Cold Drinks", "value": 24},
-            {"category": "Snacks", "value": 18},
-            {"category": "Desserts", "value": 10},
-            {"category": "Tea", "value": 6}
+            {"category": "咖啡", "value": 42},
+            {"category": "冷饮", "value": 24},
+            {"category": "零食", "value": 18},
+            {"category": "甜点", "value": 10},
+            {"category": "茶", "value": 6}
         ],
 
         "topSellingProducts": [

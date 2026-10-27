@@ -6,11 +6,11 @@ import { ProductCard } from '../components/ProductCard';
 export const MenuPage = () => {
   const [menuItems, setMenuItems] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState('全部');
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState('popular');
 
-  const categories = ['All', 'Coffee', 'Tea', 'Cold Drinks', 'Snacks', 'Desserts'];
+  const categories = ['全部', '咖啡', '茶', '冷饮', '零食', '甜点'];
 
   useEffect(() => {
     const fetchMenu = async () => {
@@ -30,7 +30,7 @@ export const MenuPage = () => {
   // Filter and Sort Logic
   const filteredItems = menuItems
     .filter((item) => {
-      const categoryMatch = selectedCategory === 'All' || item.category === selectedCategory;
+      const categoryMatch = selectedCategory === '全部' || item.category === selectedCategory;
       const searchMatch =
         item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         item.description.toLowerCase().includes(searchQuery.toLowerCase());
@@ -50,13 +50,13 @@ export const MenuPage = () => {
       <div className="bg-coffee-950 text-coffee-100 rounded-3xl p-8 sm:p-12 border border-coffee-800 shadow-2xl relative overflow-hidden text-center space-y-4">
         <div className="relative z-10 max-w-2xl mx-auto space-y-2">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold/20 text-gold text-xs font-bold uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5" /> Handcrafted Menu
+            <Sparkles className="w-3.5 h-3.5" /> 手工制作的菜单
           </span>
           <h1 className="font-serif text-3xl sm:text-5xl font-extrabold text-cream">
-            Explore Our Roastery Menu
+            探索我们的烘焙菜单
           </h1>
           <p className="text-coffee-300 text-sm">
-            Discover single-origin espressos, organic leaf teas, freshly baked pastries, and delicious desserts.
+            发现单一来源的浓缩咖啡，有机叶茶，新鲜出炉的糕点，和美味的甜点.
           </p>
         </div>
       </div>
@@ -128,16 +128,16 @@ export const MenuPage = () => {
       ) : (
         <div className="text-center py-20 bg-cream rounded-3xl border border-coffee-200 space-y-4">
           <Coffee className="w-12 h-12 text-coffee-300 mx-auto" />
-          <h3 className="font-serif text-xl font-bold text-coffee-900">No Coffee or Food Found</h3>
-          <p className="text-xs text-coffee-600">Try changing your search query or selected category filter.</p>
+          <h3 className="font-serif text-xl font-bold text-coffee-900">没有咖啡或甜点</h3>
+          <p className="text-xs text-coffee-600">尝试刷新一下页面.</p>
           <button
             onClick={() => {
-              setSelectedCategory('All');
+              setSelectedCategory('全部');
               setSearchQuery('');
             }}
             className="px-4 py-2 bg-coffee-900 text-gold text-xs font-bold rounded-xl shadow hover:bg-coffee-800 transition"
           >
-            Reset Filters
+            刷新页面
           </button>
         </div>
       )}
